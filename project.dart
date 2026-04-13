@@ -46,5 +46,27 @@ final project = Project(
         package.modules.productDomain,
       ],
     ),
+    Module(
+      name: 'cart_domain',
+      dependencies: [],
+      devDependencies: [],
+      modules: [],
+    ),
+    Module(
+      name: 'cart_data',
+      dependencies: [],
+      devDependencies: [],
+      modules: [
+        package.modules.cartDomain,
+      ],
+    ),
+    Module(
+      name: 'cart_presentation',
+      dependencies: [],
+      devDependencies: [],
+      modules: [
+        package.modules.cartDomain,
+      ],
+    ),
   ],
 );

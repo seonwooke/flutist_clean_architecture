@@ -12,5 +12,8 @@ final package = Package(
     Module(name: 'product_domain'),
     Module(name: 'product_data'),
     Module(name: 'product_presentation'),
+    Module(name: 'cart_domain'),
+    Module(name: 'cart_data'),
+    Module(name: 'cart_presentation'),
   ],
 );
