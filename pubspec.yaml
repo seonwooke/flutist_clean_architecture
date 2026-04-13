@@ -1,0 +1,22 @@
+name: flutist_clean_architecture_v3
+description: A new Flutter project managed by Flutist.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutist: ^3.0.0
+  app:
+    path: app
+
+flutter:
+  uses-material-design: true
+
+# Flutter Native Workspace configuration
+# All packages inside the 'packages' directory will be managed together
+workspace:
+  - app
