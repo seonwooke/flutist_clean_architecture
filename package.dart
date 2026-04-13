@@ -9,5 +9,8 @@ final package = Package(
   ],
   modules: [
     // Modules are auto-registered when you run flutist create
+    Module(name: 'product_domain'),
+    Module(name: 'product_data'),
+    Module(name: 'product_presentation'),
   ],
 );

@@ -24,5 +24,27 @@ final project = Project(
         // package.modules.login,
       ],
     ),
+    Module(
+      name: 'product_domain',
+      dependencies: [],
+      devDependencies: [],
+      modules: [],
+    ),
+    Module(
+      name: 'product_data',
+      dependencies: [],
+      devDependencies: [],
+      modules: [
+        package.modules.productDomain,
+      ],
+    ),
+    Module(
+      name: 'product_presentation',
+      dependencies: [],
+      devDependencies: [],
+      modules: [
+        package.modules.productDomain,
+      ],
+    ),
   ],
 );

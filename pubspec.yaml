@@ -20,3 +20,6 @@ flutter:
 # All packages inside the 'packages' directory will be managed together
 workspace:
   - app
+  - features/product/product_domain
+  - features/product/product_data
+  - features/product/product_presentation

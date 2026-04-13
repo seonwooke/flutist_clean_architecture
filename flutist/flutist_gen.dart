@@ -13,4 +13,10 @@ extension PackageDependenciesX on List<Dependency> {
 
 /// Extension for package.modules.xxx access
 extension PackageModulesX on List<Module> {
+  /// Module getter for product_domain
+  Module get productDomain => firstWhere((m) => m.name == 'product_domain');
+  /// Module getter for product_data
+  Module get productData => firstWhere((m) => m.name == 'product_data');
+  /// Module getter for product_presentation
+  Module get productPresentation => firstWhere((m) => m.name == 'product_presentation');
 }
