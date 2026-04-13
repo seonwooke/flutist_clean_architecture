@@ -5,24 +5,16 @@ import 'package:flutist/flutist.dart';
 
 /// Extension for package.dependencies.xxx access
 extension PackageDependenciesX on List<Dependency> {
-  /// Dependency getter for intl
-  Dependency get intl => firstWhere((d) => d.name == 'intl');
-  /// Dependency getter for test
-  Dependency get test => firstWhere((d) => d.name == 'test');
+  /// Dependency getter for dio
+  Dependency get dio => firstWhere((d) => d.name == 'dio');
+  /// Dependency getter for flutter_bloc
+  Dependency get flutterBloc => firstWhere((d) => d.name == 'flutter_bloc');
+  /// Dependency getter for equatable
+  Dependency get equatable => firstWhere((d) => d.name == 'equatable');
+  /// Dependency getter for mocktail
+  Dependency get mocktail => firstWhere((d) => d.name == 'mocktail');
 }
 
 /// Extension for package.modules.xxx access
 extension PackageModulesX on List<Module> {
-  /// Module getter for product_domain
-  Module get productDomain => firstWhere((m) => m.name == 'product_domain');
-  /// Module getter for product_data
-  Module get productData => firstWhere((m) => m.name == 'product_data');
-  /// Module getter for product_presentation
-  Module get productPresentation => firstWhere((m) => m.name == 'product_presentation');
-  /// Module getter for cart_domain
-  Module get cartDomain => firstWhere((m) => m.name == 'cart_domain');
-  /// Module getter for cart_data
-  Module get cartData => firstWhere((m) => m.name == 'cart_data');
-  /// Module getter for cart_presentation
-  Module get cartPresentation => firstWhere((m) => m.name == 'cart_presentation');
 }
