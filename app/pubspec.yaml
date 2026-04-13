@@ -8,5 +8,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  product_presentation:
+    path: ../features/product/product_presentation
+  product_data:
+    path: ../features/product/product_data
+  cart_presentation:
+    path: ../features/cart/cart_presentation
+  cart_data:
+    path: ../features/cart/cart_data
 
 resolution: workspace
