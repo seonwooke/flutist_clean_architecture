@@ -9,7 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutist: ^3.0.0
+  flutist:
+    path: /Users/seonwookkim/Documents/projects/flutist/flutist
   app:
     path: app
 

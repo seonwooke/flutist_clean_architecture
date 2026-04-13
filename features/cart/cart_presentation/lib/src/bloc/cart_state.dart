@@ -1,3 +1,5 @@
+import 'package:cart_domain/cart_domain.dart';
+
 sealed class CartState {
   const CartState();
 }
@@ -11,10 +13,11 @@ final class CartLoading extends CartState {
 }
 
 final class CartSuccess extends CartState {
-  const CartSuccess();
+  const CartSuccess({required this.cart});
+  final Cart cart;
 }
 
 final class CartFailure extends CartState {
-  const CartFailure(this.message);
+  const CartFailure({required this.message});
   final String message;
 }

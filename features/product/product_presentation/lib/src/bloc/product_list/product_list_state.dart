@@ -1,3 +1,5 @@
+import 'package:product_domain/product_domain.dart';
+
 sealed class ProductListState {
   const ProductListState();
 }
@@ -11,10 +13,11 @@ final class ProductListLoading extends ProductListState {
 }
 
 final class ProductListSuccess extends ProductListState {
-  const ProductListSuccess();
+  const ProductListSuccess({required this.products});
+  final List<Product> products;
 }
 
 final class ProductListFailure extends ProductListState {
-  const ProductListFailure(this.message);
+  const ProductListFailure({required this.message});
   final String message;
 }
