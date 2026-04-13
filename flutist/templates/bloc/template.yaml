@@ -1,0 +1,24 @@
+description: "BLoC boilerplate — bloc / event / state 3개 파일 생성"
+
+attributes:
+  - name: name
+    required: true
+    description: "BLoC 이름 (e.g. product_list)"
+
+  - name: path
+    required: false
+    default: "lib"
+    description: "출력 디렉토리"
+
+items:
+  - type: file
+    path: "{{path}}/{{name | snake_case}}_bloc.dart"
+    templatePath: "bloc.dart.template"
+
+  - type: file
+    path: "{{path}}/{{name | snake_case}}_event.dart"
+    templatePath: "event.dart.template"
+
+  - type: file
+    path: "{{path}}/{{name | snake_case}}_state.dart"
+    templatePath: "state.dart.template"
