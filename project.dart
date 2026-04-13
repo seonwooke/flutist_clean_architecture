@@ -17,16 +17,27 @@ final project = Project(
     Module(
       name: 'product_domain',
       dependencies: [package.dependencies.equatable],
+      devDependencies: [
+        package.dependencies.test,
+        package.dependencies.mocktail,
+      ],
       modules: [],
     ),
     Module(
       name: 'product_data',
       dependencies: [package.dependencies.dio],
+      devDependencies: [
+        package.dependencies.test,
+      ],
       modules: [package.modules.productDomain],
     ),
     Module(
       name: 'product_presentation',
       dependencies: [package.dependencies.flutterBloc],
+      devDependencies: [
+        package.dependencies.blocTest,
+        package.dependencies.mocktail,
+      ],
       modules: [package.modules.productDomain],
     ),
 
@@ -34,12 +45,25 @@ final project = Project(
     Module(
       name: 'cart_domain',
       dependencies: [package.dependencies.equatable],
+      devDependencies: [
+        package.dependencies.test,
+      ],
       modules: [],
     ),
-    Module(name: 'cart_data', modules: [package.modules.cartDomain]),
+    Module(
+      name: 'cart_data',
+      devDependencies: [
+        package.dependencies.test,
+      ],
+      modules: [package.modules.cartDomain],
+    ),
     Module(
       name: 'cart_presentation',
       dependencies: [package.dependencies.flutterBloc],
+      devDependencies: [
+        package.dependencies.blocTest,
+        package.dependencies.mocktail,
+      ],
       modules: [package.modules.cartDomain],
     ),
 

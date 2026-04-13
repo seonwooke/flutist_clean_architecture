@@ -9,4 +9,8 @@ environment:
 dependencies:
   equatable: ^2.0.5
 
+dev_dependencies:
+  test: ^1.24.0
+  mocktail: ^1.0.3
+
 resolution: workspace

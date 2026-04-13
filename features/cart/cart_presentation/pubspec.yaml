@@ -11,4 +11,10 @@ dependencies:
   cart_domain:
     path: ../cart_domain
 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.3
+
 resolution: workspace
